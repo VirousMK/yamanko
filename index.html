@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="h100p" lang="ru">
+
+<head>
+	<title>Yamanko</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="shortcut icon" href="imgs/favicon.png" type="image/png">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile-style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mosaic.min.css">
+
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+</head>
+
+<body class="b-box h100p m0">
+	
+	<nav class="flex fixed b-box bgc-first">
+		<a class="link  flex bgc-second-h tc-second pointer" href="#main">
+			<span class="link-icon  t-center">home</span>
+			<span class="link-text">Главная</span>
+		</a><!-- 
+		 --><a class="link  flex bgc-second-h tc-second pointer" href="#progress">
+			<span class="link-icon  t-center">list_alt</span>
+			<span class="link-text">Прогресс</span>
+		</a><!-- 
+		 --><a class="link  flex bgc-second-h tc-second pointer" href="#polls">
+			<span class="link-icon  t-center">equalizer</span>
+			<span class="link-text">Опросы</span>
+		</a><!-- 
+		 --><a class="link  flex bgc-second-h tc-second pointer" href="#achievements">
+			<span class="link-icon  t-center">stars</span>
+			<span class="link-text">Достижения</span>
+		</a><!-- 
+		 --><a class="link  flex bgc-second-h tc-second pointer" href="#gallery">
+			<span class="link-icon  t-center">collections</span>
+			<span class="link-text">Галерея</span>
+		</a><!-- 
+		 --><a class="link  flex bgc-second-h tc-second pointer" href="#external-links">
+			<span class="link-icon  t-center">open_in_new</span>
+			<span class="link-text">Ссылки</span>
+		</a>
+	</nav>
+
+	<main class="relative b-box h100p">
+		<div class="main  hidden relative b-box h100p t-center">
+			<div class="logo-container  inline-block relative h100p">
+				<div class="bj-container  absolute"></div>
+				<img class="logo  b-box" src="imgs/logo.png" alt="logo">
+
+				<div class="intro-container  absolute w100p t-center">
+					<div class="intro">
+						<div class="intro-header  black">VIROUS</div>
+						<div class="intro-body inline-block">
+							Это я.
+							<span class="roles-list  inline-block relative">
+								<span class="roles-list-items  absolute">
+									<div class="w100p">Переводчик-любитель</div>
+									<div class="w100p">Эдитор переводов</div>
+									<div class="w100p">Редактор переводов</div>
+								</span>
+								Переводчик-любитель
+							</span> манги!
+						</div>
+						<!-- <div class="slogan">С тайтлом до конца</div> -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="progress  hidden flex relative b-box">
+			<div class="loader loader-centered  absolute"></div>
+			<div class="works-list  grid w100p">
+				<div class="work-container  relative hidden">
+					<div class="loader loader-centered  absolute"></div>
+					<div class="work  relative hidden" data-tilt>
+						<div class="work-img"><img class="block w100p" src="imgs/placeholder.jpg"></div>
+						<div class="work-data  absolute b-box w100p">
+							<div class="work-name  bold">Название</div>
+							<div class="work-descr  pre-wrap">Описание</div>
+							<div class="work-date  tc-second">Дата</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="polls  hidden flex relative b-box">
+			<div class="polls-load-failed  hidden absolute w100p t-center">
+				<p>Не удалось <br>загрузить опросы :(</p>
+				Если сайт vk.com доступен в Вашей стране, то<br> попробуйте перезагрузить страницу позже.
+			</div>
+			<div class="polls-list  grid"></div>
+		</div>
+
+		<div class="achievements  hidden flex relative b-box h100p">
+			<div class="loader loader-centered  absolute"></div>
+			<div class="achievements-list  flex">
+				<div class="achievement  hidden relative b-box w100p t-center tc-first usn">
+					<div class="side-f  flex abs b-box h100p bgc-first">
+						<svg class="a-icon" height="120" width="120" viewBox="0 0 26.458333 26.458334"></svg>
+						<div class="a-name  flex ma bold"></div>
+					</div>
+					<div class="side-s  flex absolute b-box h100p w100p bgc-first">
+						<a class="a-work  block" target="_blank"></a>
+						<div class="a-descr  flex"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gallery  hidden relative b-box">
+			<div class="spoiler-alert  absolute w100p t-center">
+				<p>Спойлеры!</p>
+				Здесь есть сюжетные фрагменты<br> переводимых и переведённых манг.<br>
+				<button>Показать!</button>
+			</div>
+			<div class="gallery-back  hidden fixed flex h100p w100p">
+				<div class="loader loader-centered  absolute"></div>
+				<img class="img-container">
+			</div>
+			<div class="gallery-lists  hidden"></div>
+		</div>
+
+		<div class="external-links  hidden b-box t-center">
+			<div class="external-links-container  inline-block">
+
+				<div class="contacts  grid b-box">
+					<div class="contacts-section  inline-block bgc-first">
+						<div class="el-header  bb bold">Я на -Manga сайтах</div>
+						<a class="link  flex" href="https://readmanga.me/list/person/virous"><img src="imgs/icons/read.png">ReadManga</a>
+						<a class="link  flex" href="https://mintmanga.live/list/person/virous"><img src="imgs/icons/mint.png">MintManga</a>
+						<a class="link  flex" href="https://remanga.org/team/virous?subpath=titles"><img src="imgs/icons/re.png">ReManga</a>
+					</div>
+					<div class="contacts-section  inline-block bgc-first">
+						<div class="el-header  bb bold">Я на Manga- сайтах</div>
+						<a class="link  flex" href="https://mangalib.me/team/virous"><img src="imgs/icons/lib.png">MangaLib</a>
+						<a class="link  flex" href="https://manga-chan.me/translation/121999/"><img src="imgs/icons/chan.png">MangaChan</a>
+						<a class="link  flex" href="https://mangahub.ru/translator/virous"><img src="imgs/icons/hub.png">MangaHub</a>
+					</div>
+					<div class="contacts-section  inline-block bgc-first">
+						<div class="el-header  bb bold">Я на других сайтах</div>
+						<a class="link  flex" href="https://vk.com/yamanko_club"><img src="imgs/icons/vk.png">Группа в ВК</a>
+						<a class="link  flex" href="https://shikimori.one/Virous"><img src="imgs/icons/shiki.png">Shikimori</a>
+					</div>
+				</div>
+
+				<div class="sources  b-box w100p bgc-first">
+					<div class="el-header  bb bold">Источники всякого</div>
+					<div class="sources-links">
+						Обложка «После закрытия» — <a href="https://www.pixiv.net/en/artworks/66747002">https://www.pixiv.net/en/artworks/66747002</a><br>
+						Мозаика из изображений — <a href="https://jquery-mosaic.tin.cat">https://jquery-mosaic.tin.cat</a><br>
+						Форматирование дат — <a href="https://momentjs.com">https://momentjs.com</a><br>
+						Эффект наклона — <a href="https://micku7zu.github.io/vanilla-tilt.js">https://micku7zu.github.io/vanilla-tilt.js</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</main>
+
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+	<script>
+		var firebaseConfig = {
+	    apiKey: "AIzaSyAmtU5Jad_jnRSQbNVQeHR1IyWjSilrBUE",
+	    authDomain: "yamanko-f4dc4.firebaseapp.com",
+	    databaseURL: "https://yamanko-f4dc4.firebaseio.com",
+	    projectId: "yamanko-f4dc4",
+	    storageBucket: "yamanko-f4dc4.appspot.com",
+	    messagingSenderId: "784569995811",
+	    appId: "1:784569995811:web:d835aaa9dbcf8c5c7a1796",
+	    measurementId: "G-X4L2LCLBC1"
+	  };
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/moment.js"></script>
+	<script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mosaic.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
