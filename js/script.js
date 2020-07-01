@@ -130,16 +130,6 @@ ref.once('value', function (data) {
 	var vk_icon = new Image;
 	var $polls_list = $('.polls-list');
 	vk_icon.onload = function () {
-		/* o - Удалить - o */
-		switch (data.polls.length) {
-			case 1:
-				$polls_list.addClass('x1');
-				break;
-			case 2:
-				$polls_list.addClass('x2');
-				break;
-		}
-		/* x - Удалить - x */
 		$(data.polls).each(function(index) {
 			$polls_list.prepend( $('<div id="vk-poll' + (index + 1) + '" class="vk-poll  inline-block"></div>') );
 			VK.Widgets.Poll('vk-poll' + (index + 1), {}, this);
@@ -231,4 +221,22 @@ $('.img-container').on('click', function() {
 
 window.onload = function() {
 	$('.main').addClass( (next_section == 'main') ? 'ready' : 'done');
+}
+
+
+
+String.prototype.hashCode = function() {
+  return this.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);
 };
+
+var pressed_keys = [];
+$(window).on('keyup', function(event) {
+	pressed_keys.push(event.key);
+	if (pressed_keys.join('').length > 72) pressed_keys.splice(0, 1);
+	if ( pressed_keys.join('').hashCode() == -355809473) {
+		$('.bj-container').css({
+			'mask-image': 'url(imgs/gif-maker.gif)',
+			'-webkit-mask-image': 'url(imgs/gif-maker.gif)'
+		});;
+	}
+});
