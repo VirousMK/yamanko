@@ -27,11 +27,17 @@
   }
 
   main {
+    max-height: calc(100% - 5.5rem);
     padding-left: 0;
-    padding-bottom: 5.5rem;
+    margin-bottom: 5.5rem;
   }
 
 
+  
+  .bj-container {
+            mask-size: calc(100% - 4rem);
+    -webkit-mask-size: calc(100% - 4rem);
+  }
 
   .intro {
     padding: 2vh 0 3vh 0;
@@ -177,7 +183,6 @@
 
   .achievements-list {
     display: block;
-    padding-bottom: 5rem;
   }
   
   .achievement {

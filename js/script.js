@@ -160,7 +160,7 @@ ref.once('value', function (data) {
 					maxRowHeightPolicy: 'tail',
 					showTailWhenNotEnoughItemsForEvenOneRow: true
 				});
-				$gallery_list.next('.loader').addClass('hidden');
+				$gallery_list.next('.loader').remove();
 				$gallery_list.removeClass('hidden');
 			}
 		}

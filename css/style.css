@@ -419,11 +419,11 @@ main {
   line-height: 1.6vh;
   mask-image: url('../imgs/logo.png');
   mask-position: center;
-  mask-size: calc(100% - 4rem);
+  mask-size: auto calc(100% - 4rem);
   mask-repeat: no-repeat;
   -webkit-mask-image: url('../imgs/logo.png');
   -webkit-mask-position: center;
-  -webkit-mask-size: calc(100% - 4rem);
+  -webkit-mask-size: auto calc(100% - 4rem);
   -webkit-mask-repeat: no-repeat;
   opacity: 0;
 }
@@ -862,8 +862,11 @@ main {
 }
 
 .gallery-list {
-  margin-bottom: 2rem !important;
   padding: 0 16px;
+}
+
+.gallery-list:not(:last-child) {
+  margin-bottom: 2rem !important;
 }
 
 .gallery-list img {
