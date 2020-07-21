@@ -318,7 +318,7 @@ nav .link.active {
 
 nav .link-icon {
   width: 2.5rem;
-  font-family: "Material Icons";
+  font-family: 'Material Icons';
   font-size: 2.5rem;
 }
 
@@ -552,7 +552,8 @@ main {
   height: 5rem;
   width: 5rem;
   border-radius: 100%;
-  font-size: 5rem;
+  font-family: 'Material Icons';
+  font-size: 4rem;
   line-height: 5rem;
   opacity: .5;
   -webkit-box-shadow: 0 .4rem 1rem .2rem rgba(0,0,0,0.24);
