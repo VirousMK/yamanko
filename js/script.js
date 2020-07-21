@@ -1,11 +1,16 @@
 var next_section = (location.hash) ? location.hash.substr(1) : 'main';
-$('nav .link[href="#' + location.hash.substr(1) + '"]').addClass('active');
+if (next_section != 'main') $('.main').addClass('done');
+$('nav .link[href="#' + next_section + '"]').addClass('active');
 $('.' + next_section).removeClass('hidden');
 
 $(window).on('hashchange', function (e) {
 	next_section = (location.hash) ? location.hash.substr(1) : 'main';
+
+	if (next_section != 'main') $('.main').addClass('done');
+
 	$('nav .link.active').removeClass('active');
 	$('nav .link[href="#' + next_section + '"]').addClass('active');
+
 	$('main > :not(.hidden)').addClass('hidden');
 	$('.' + next_section).removeClass('hidden');
 });
@@ -220,7 +225,7 @@ $('.img-container').on('click', function() {
 
 
 window.onload = function() {
-	$('.main').addClass( (next_section == 'main') ? 'ready' : 'done');
+	if (next_section == 'main') $('.main').addClass('ready');
 }
 
 
