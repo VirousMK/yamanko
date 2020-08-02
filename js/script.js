@@ -226,6 +226,7 @@ $('.img-container').on('click', function() {
 
 window.onload = function() {
 	if (next_section == 'main') $('.main').addClass('ready');
+	console.log("%c+", 'font-size: 1px; padding: 44px 44px; line-height: 0; background: url("https://virousmk.github.io/yamanko/imgs/favicon.png"); background-size: 64px; background-repeat: no-repeat; background-position: 10px 10px; color: transparent;');
 }
 
 

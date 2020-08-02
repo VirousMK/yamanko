@@ -151,18 +151,27 @@
     display: none;
   }
 
+  
 
-
-  .contacts {
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
+  .contacts-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 4rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
-  .sources-links {
+  .contacts-section .link {
+    margin: 0;
+    width: 20vw;
+  }
+
+  .sources {
     line-height: normal;
   }
 
-  .sources-links a {
+  .sources a {
     display: inline-block;
     margin-bottom: .5rem;
     max-width: calc(100vw - 8rem);
@@ -173,7 +182,7 @@
     white-space: nowrap;
   }
 
-  .sources-links a:last-child {
+  .sources a:last-child {
     margin-bottom: 0;
   }
 }

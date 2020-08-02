@@ -861,50 +861,79 @@ main {
 
 
 
-.external-links {
-  padding: 2rem;
-}
-
-.external-links-container {
+.el-header {
+  margin: 2rem;
+  padding: 2rem 0 0 1rem;
+  font-size: 2.5rem;
   text-align: left;
 }
 
-.contacts {
-  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-}
-
-.contacts-section {
-  padding: 2rem;
-  vertical-align: top;
+.el-header:first-child {
+  margin-top: 0;
+  border-top: 0;
 }
 
 .contacts-section .link {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 3.5rem;
+  margin: 0 6rem 1rem 6rem;
+  height: 120px;
+  width: 120px;
+  background-color: rgba(var(--tc-first));
+  mask-position: center;
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
 }
 
-.contacts-section .link img {
-  margin-right: .5rem;
+.contacts-section .link[data-img="imgs/icons/read.png"] {
+  mask-image: url("imgs/icons/read.png"); 
+  -webkit-mask-image: url("/imgs/icons/read.png");
 }
 
-.el-header {
-  font-size: 2.5rem;
-  padding-bottom: 2rem;
-  margin-bottom: 1.5rem;
+.contacts-section .link[data-img="imgs/icons/mint.png"] {
+  mask-image: url("imgs/icons/mint.png"); 
+  -webkit-mask-image: url("/imgs/icons/mint.png");
+}
+
+.contacts-section .link[data-img="imgs/icons/re.png"] {
+  mask-image: url("imgs/icons/re.png"); 
+  -webkit-mask-image: url("/imgs/icons/re.png");
+}
+
+.contacts-section .link[data-img="imgs/icons/lib.png"] {
+  mask-image: url("imgs/icons/lib.png"); 
+  -webkit-mask-image: url("/imgs/icons/lib.png");
+}
+
+.contacts-section .link[data-img="imgs/icons/chan.png"] {
+  mask-image: url("imgs/icons/chan.png"); 
+  -webkit-mask-image: url("/imgs/icons/chan.png");
+}
+
+.contacts-section .link[data-img="imgs/icons/hub.png"] {
+  mask-image: url("imgs/icons/hub.png"); 
+  -webkit-mask-image: url("/imgs/icons/hub.png");
+}
+
+.contacts-section .link[data-img="imgs/icons/vk.png"] {
+  mask-image: url("imgs/icons/vk.png"); 
+  -webkit-mask-image: url("/imgs/icons/vk.png");
+}
+
+.contacts-section .link[data-img="imgs/icons/shiki.png"] {
+  mask-image: url("imgs/icons/shiki.png"); 
+  -webkit-mask-image: url("/imgs/icons/shiki.png");
 }
 
 .sources {
-  margin-top: 2rem;
-  padding: 2rem;
-}
-
-.sources-links {
+  margin: 0 2rem;
+  padding: 0 1rem;
+  text-align: left;
   line-height: 3.5rem;
 }
+
+
 
 @media screen and (min-width: 425px) {
   main {
