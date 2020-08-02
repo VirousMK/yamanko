@@ -887,43 +887,43 @@ main {
 }
 
 .contacts-section .link[data-img="imgs/icons/read.png"] {
-  mask-image: url("imgs/icons/read.png"); 
-  -webkit-mask-image: url("/imgs/icons/read.png");
+  mask-image: url("../imgs/icons/read.png"); 
+  -webkit-mask-image: url("../imgs/icons/read.png");
 }
 
 .contacts-section .link[data-img="imgs/icons/mint.png"] {
-  mask-image: url("imgs/icons/mint.png"); 
-  -webkit-mask-image: url("/imgs/icons/mint.png");
+  mask-image: url("../imgs/icons/mint.png"); 
+  -webkit-mask-image: url("../imgs/icons/mint.png");
 }
 
 .contacts-section .link[data-img="imgs/icons/re.png"] {
-  mask-image: url("imgs/icons/re.png"); 
-  -webkit-mask-image: url("/imgs/icons/re.png");
+  mask-image: url("../imgs/icons/re.png"); 
+  -webkit-mask-image: url("../imgs/icons/re.png");
 }
 
 .contacts-section .link[data-img="imgs/icons/lib.png"] {
-  mask-image: url("imgs/icons/lib.png"); 
-  -webkit-mask-image: url("/imgs/icons/lib.png");
+  mask-image: url("../imgs/icons/lib.png"); 
+  -webkit-mask-image: url("../imgs/icons/lib.png");
 }
 
 .contacts-section .link[data-img="imgs/icons/chan.png"] {
-  mask-image: url("imgs/icons/chan.png"); 
-  -webkit-mask-image: url("/imgs/icons/chan.png");
+  mask-image: url("../imgs/icons/chan.png"); 
+  -webkit-mask-image: url("../imgs/icons/chan.png");
 }
 
 .contacts-section .link[data-img="imgs/icons/hub.png"] {
-  mask-image: url("imgs/icons/hub.png"); 
-  -webkit-mask-image: url("/imgs/icons/hub.png");
+  mask-image: url("../imgs/icons/hub.png"); 
+  -webkit-mask-image: url("../imgs/icons/hub.png");
 }
 
 .contacts-section .link[data-img="imgs/icons/vk.png"] {
-  mask-image: url("imgs/icons/vk.png"); 
-  -webkit-mask-image: url("/imgs/icons/vk.png");
+  mask-image: url("../imgs/icons/vk.png"); 
+  -webkit-mask-image: url("../imgs/icons/vk.png");
 }
 
 .contacts-section .link[data-img="imgs/icons/shiki.png"] {
-  mask-image: url("imgs/icons/shiki.png"); 
-  -webkit-mask-image: url("/imgs/icons/shiki.png");
+  mask-image: url("../imgs/icons/shiki.png"); 
+  -webkit-mask-image: url("../imgs/icons/shiki.png");
 }
 
 .sources {
