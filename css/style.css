@@ -639,16 +639,18 @@ main {
 
 .work-name {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 3rem;
 }
 
 .work-descr {
   padding-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 .work-date {
   text-align: right;
+  font-size: 1.6rem;
 }
 
 
@@ -884,6 +886,26 @@ main {
   -webkit-mask-position: center;
   -webkit-mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
+}
+
+.contacts-section .link:hover {
+  -webkit-animation: .6s ease-in-out 0s normal none running shake_icon;
+          animation: .6s ease-in-out 0s normal none running shake_icon;
+}
+
+@keyframes shake_icon {
+   0%, 50%, 100% {
+     transform: rotate(0deg);
+     -webkit-transform: rotate(0deg);
+   }
+   10%, 30% {
+     transform: rotate(-10deg);
+     -webkit-transform: rotate(-10deg);
+   }
+   20%, 40% {
+     transform: rotate(10deg);
+     -webkit-transform: rotate(10deg);
+   }
 }
 
 .contacts-section .link[data-img="imgs/icons/read.png"] {
