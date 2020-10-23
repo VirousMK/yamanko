@@ -938,6 +938,11 @@ main {
   -webkit-mask-image: url("../imgs/icons/hub.png");
 }
 
+.contacts-section .link[data-img="imgs/icons/dex.png"] {
+  mask-image: url("../imgs/icons/dex.png"); 
+  -webkit-mask-image: url("../imgs/icons/dex.png");
+}
+
 .contacts-section .link[data-img="imgs/icons/vk.png"] {
   mask-image: url("../imgs/icons/vk.png"); 
   -webkit-mask-image: url("../imgs/icons/vk.png");
