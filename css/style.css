@@ -482,6 +482,29 @@ main {
   opacity: 1;
 }
 
+@keyframes intro_header_anim {
+  30% {
+    -webkit-transform: translateY(calc(5.1vh / 2)) scale(1);
+            transform: translateY(calc(5.1vh / 2)) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(calc(5.1vh / 2)) scale(1);
+            transform: translateY(calc(5.1vh / 2)) scale(1);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes intro_header_anim {
   30% {
     -webkit-transform: translateY(calc(5.1vh / 2)) scale(1);

@@ -95,7 +95,7 @@ ref.once('value', function (data) {
 		$new_work.find('.work-descr').html(this.descr);
 		$new_work.find('.work-date').html( moment( Number(this.date) ).format('D MMM YYYY') );
 
-		prepare_img($new_work, this.img);
+		prepare_img($new_work, 'https://drive.google.com/u/0/uc?id=' + this.img);
 
 		$('.progress .works-list').prepend($new_work);
 	});
@@ -146,7 +146,7 @@ ref.once('value', function (data) {
 	}
 	vk_icon.src = 'https://vk.com/images/icons/favicons/fav_logo.ico';
 
-	/* Заполнение вкладки «Галлерея» */
+	/* Заполнение вкладки «Галерея» */
 	class Gallery_Loader {
 
 		constructor(name, length) {
@@ -160,7 +160,7 @@ ref.once('value', function (data) {
 			if (this.counter >= this.length) {
 				var $gallery_list = $('.gallery-list[data-gallery-name="' + this.name + '"]');
 				$gallery_list.Mosaic({
-					maxRowHeight: 350,
+					maxRowHeight: 200,
 					innerGap: 16,
 					maxRowHeightPolicy: 'tail',
 					showTailWhenNotEnoughItemsForEvenOneRow: true
@@ -196,8 +196,8 @@ ref.once('value', function (data) {
 						$('.gallery-back').removeClass('hidden');
 						$('.img-container').attr('src', $(this).data('source'));
 					}
-					img.src = this.low;
-					$(img).attr('data-source', this.source);
+					img.src = 'https://lh3.google.com/u/0/d/' + this + '=w200-h190-p-k-nu-iv1';
+					$(img).attr('data-source', 'https://drive.google.com/u/0/uc?id=' + this);
 					return img;
 				})
 			});
