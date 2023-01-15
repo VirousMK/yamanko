@@ -415,11 +415,11 @@ main {
   word-break: break-all;
   font-size: 1.6vh;
   line-height: 1.6vh;
-  mask-image: url('../imgs/logo.svg');
+  mask-image: url('../imgs/logo.png');
   mask-position: center;
   mask-size: auto calc(100% - 4rem);
   mask-repeat: no-repeat;
-  -webkit-mask-image: url('../imgs/logo.svg');
+  -webkit-mask-image: url('../imgs/logo.png');
   -webkit-mask-position: center;
   -webkit-mask-size: auto calc(100% - 4rem);
   -webkit-mask-repeat: no-repeat;
